@@ -91,7 +91,7 @@ app.get('/payment/execute/', function (req, res) {
             }
             else{
                 //res.json({'status':'success', 'data': agreement});
-				res.redirect("www.google.com");
+				res.redirect("fire.html");
             }
         });
     }
@@ -116,7 +116,7 @@ app.get('/payment/cancel/:agreementId', function(req, res){
                 }
                 //if cancelled, agreement.state == "Cancelled"
                 //res.json({'status':'success', 'data': agreement});
-				res.redirect("www.google.com");
+				res.redirect("fire.html");
             });
         }
     });

@@ -90,8 +90,8 @@ app.get('/payment/execute/', function (req, res) {
                 throw error;
             }
             else{
-                //res.json({'status':'success', 'data': agreement});
-				res.redirect("fire.html");
+                res.json({'status':'success', 'data': agreement});
+				//res.redirect("fire.html");
             }
         });
     }
@@ -115,8 +115,8 @@ app.get('/payment/cancel/:agreementId', function(req, res){
                     throw error;
                 }
                 //if cancelled, agreement.state == "Cancelled"
-                //res.json({'status':'success', 'data': agreement});
-				res.redirect("fire.html");
+                res.json({'status':'success', 'data': agreement});
+				//res.redirect("fire.html");
             });
         }
     });
